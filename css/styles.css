@@ -34,6 +34,7 @@ img {
     --borler-portfolio-pic: #EEEEEE;
     --border-heder: #ECECEC;
     --new-bgd-hero: #C4C4C4;
+    --hover-trans: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -148,6 +149,11 @@ body {
     
 }
 
+.site-nav .link {
+    transition: color var(--hover-trans);
+    
+} 
+
 .site-nav .link:hover,
 .site-nav .link:focus {
     color: var(--accent-color);
@@ -157,7 +163,7 @@ body {
     color: var(--accent-color)
 }
 
-header .site-nav .link.current::after {
+.site-nav .link.current::after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -242,6 +248,8 @@ header .site-nav .link.current::after {
     line-height: 1.88;
     align-items: center;
     letter-spacing: 0.06em;
+
+    transition: background-color var(--hover-trans);
 }
 .button-hero:hover,
 .button-hero:focus {
@@ -472,6 +480,9 @@ header .site-nav .link.current::after {
     color: #AFB1B8;
     background-color: #FFFFFF;
     border-radius: 50%;
+
+    transition: color var(--hover-trans), background-color var(--hover-trans);
+   
 }
 .social-link-img {
     fill: currentColor;  
@@ -505,6 +516,7 @@ header .site-nav .link.current::after {
     /* background-color: #FFFFFF; */
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    transition: color var(--hover-trans), border-color var(--hover-trans);
 }
 
 .clients-logo {
@@ -533,6 +545,8 @@ header .site-nav .link.current::after {
     letter-spacing: 0.03em;
     text-decoration: none;
     font-style: normal;
+    transition: color var(--hover-trans);
+
 }
 .footer .maps:hover,
 .footer .maps:focus {
@@ -546,6 +560,7 @@ header .site-nav .link.current::after {
     letter-spacing: 0.03em;
     text-decoration: none;
     font-style: normal;
+    transition: color var(--hover-trans);
 
 }
 .footer .contact:hover,
@@ -604,6 +619,7 @@ header .site-nav .link.current::after {
     color: #FFFFFF;;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+    transition: color var(--hover-trans), background-color var(--hover-trans);
 }
 .footer-link-img {
     fill: currentColor;  
@@ -637,7 +653,12 @@ header .site-nav .link.current::after {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    
+
+    transition: color var(--hover-trans), 
+    background-color var(--hover-trans),
+    box-shadow var(--hover-trans), 
+    border var(--hover-trans);
+       
 }
 
 .button-pic:hover,
@@ -720,6 +741,7 @@ header .site-nav .link.current::after {
 }
 .pic-element-link {
     display: block;
+    transition: box-shadow var(--hover-trans);
 }
 .pic-element-link:hover,
 .pic-element-link:focus {
