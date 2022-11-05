@@ -357,20 +357,30 @@ body {
     gap: 30px;
 }
 
-/* .work:not(:last-child) {
-    margin-right: 30px;
-} */
-/* .work-list .work:last-child {
-    margin-right: 0;
+.wrapper {
+   position: relative;
 }
-.work {
-    display: flex;
-    width: 370px;
-} */
 
-/* .work-list .work + .work {
-    margin-left: 30px;
-}  */
+.overlay-box {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.overlay-text {
+    color: var(--hero-text-color);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+
 /* ===============================
             section-team
    ===============================  */
