@@ -62,8 +62,6 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    /* border: 1px solid tomato; */
-   
 }
 
 
@@ -109,6 +107,7 @@ body {
 
 .header-container {
     display: flex;
+    
 }
 
 .link-nav:not(:last-child) {
@@ -117,7 +116,7 @@ body {
 
 .header-link {
     position: relative;
-    display: block;
+    display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 32px;
@@ -158,7 +157,7 @@ body {
     color: var(--accent-color)
 }
 
-.site-nav .link.current::after {
+header .site-nav .link.current::after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -172,7 +171,7 @@ body {
 }
 
 
-.header {
+.header-portfolio {
     border-bottom: 1px solid var(--border-heder);
 }
 
@@ -765,8 +764,3 @@ body {
     border: 1px solid var(--borler-portfolio-pic);
     border-top: none;
    }
-
-   /* .container-btn {
-    outline: 1px solid tomato;
-    min-width: 575px;
-   } */
